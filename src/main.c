@@ -98,6 +98,7 @@ static void idle_state_handle(void) {
 /**@brief Application main function.
  */
 int main(void) {
+    NRF_POWER->SYSTEMOFF = 1;
     uint32_t err_code;
 
     // Initialize Logger.
